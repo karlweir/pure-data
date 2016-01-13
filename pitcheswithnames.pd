@@ -1,0 +1,22 @@
+#N canvas 720 103 498 521 10;
+#X msg 43 31 a1 440;
+#X msg 107 31 c2 524;
+#X msg 172 31 e2 660;
+#X obj 43 66 route a1 c2 e2;
+#X floatatom 43 101 5 0 0 0 - - -, f 5;
+#X obj 43 133 osc~ 500;
+#X obj 42 187 *~;
+#X obj 60 163 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 42 222 dac~;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 0;
+#X connect 3 2 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 6 0 8 1;
+#X connect 7 0 6 1;
